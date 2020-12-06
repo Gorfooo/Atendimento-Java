@@ -15,7 +15,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("TelaPrincipal"), 640, 480);
+        scene = new Scene(loadFXML("TelaPrincipal"), 923, 560);
         stage.setTitle("Atendimento");
 //        stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);

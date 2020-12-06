@@ -7,16 +7,17 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gorfo.mvnfxmlpadrao.ControllerTelaCadastroAtendimento">
+<AnchorPane fx:id="anchorPaneFundoAtendimento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gorfo.mvnfxmlpadrao.ControllerTelaCadastroAtendimento">
    <children>
       <Label layoutX="10.0" layoutY="151.0" text="Abandonada">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="89.0" text="Id">
+      <Label layoutX="44.0" layoutY="100.0" text="Id">
          <font>
             <Font size="14.0" />
          </font>
@@ -51,28 +52,32 @@
             <Font size="23.0" />
          </font>
       </Label>
-      <TableView layoutY="360.0" prefHeight="200.0" prefWidth="923.0">
+      <TableView fx:id="tableViewAtendimento" layoutY="360.0" prefHeight="200.0" prefWidth="923.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Id" />
-          <TableColumn prefWidth="99.0" text="Abandonada" />
-            <TableColumn prefWidth="94.0" text="Data" />
-            <TableColumn prefWidth="198.0" text="Atendente Transferido" />
-            <TableColumn prefWidth="202.0" text="Observação" />
-            <TableColumn prefWidth="129.0" text="Cliente" />
-            <TableColumn prefWidth="125.0" text="Atendente" />
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableColumnAbandonada" prefWidth="99.0" text="Abandonada" />
+            <TableColumn fx:id="tableColumnData" prefWidth="94.0" text="Data" />
+            <TableColumn fx:id="tableColumnAtendenteTransferido" prefWidth="198.0" text="Atendente Transferido" />
+            <TableColumn fx:id="tableColumnObservacao" prefWidth="202.0" text="Observação" />
+            <TableColumn fx:id="tableColumnCliente" prefWidth="129.0" text="Cliente" />
+            <TableColumn fx:id="tableColumnAtendente" prefWidth="125.0" text="Atendente" />
         </columns>
       </TableView>
-      <TextField layoutX="83.0" layoutY="87.0" prefHeight="25.0" prefWidth="29.0" />
-      <TextField layoutX="112.0" layoutY="149.0" />
-      <TextField layoutX="112.0" layoutY="189.0" />
-      <TextField layoutX="112.0" layoutY="226.0" />
-      <TextField layoutX="671.0" layoutY="179.0" />
-      <TextField layoutX="606.0" layoutY="257.0" prefHeight="94.0" prefWidth="311.0" />
-      <DatePicker layoutX="671.0" layoutY="113.0" />
-      <Button fx:id="buttonConsultarAtendimento" layoutX="134.0" layoutY="87.0" mnemonicParsing="false" onAction="#handlerConsultarAtendimento" text="Consultar" />
+      <TextField fx:id="textFieldId" layoutX="75.0" layoutY="97.0" prefHeight="25.0" prefWidth="29.0" />
+      <TextField fx:id="textFieldAbandonada" layoutX="112.0" layoutY="149.0" />
+      <TextField fx:id="textFieldAtendente" layoutX="112.0" layoutY="189.0" />
+      <TextField fx:id="textFieldCliente" layoutX="112.0" layoutY="226.0" />
+      <TextField fx:id="textFieldAtendenteTransferido" layoutX="671.0" layoutY="179.0" />
+      <TextField fx:id="textFieldObservacao" layoutX="606.0" layoutY="257.0" prefHeight="94.0" prefWidth="311.0" />
+      <DatePicker fx:id="datePickerData" layoutX="671.0" layoutY="113.0" />
+      <Button fx:id="buttonConsultarAtendimento" layoutX="130.0" layoutY="97.0" mnemonicParsing="false" onAction="#handlerConsultarAtendimento" text="Consultar" />
       <Button fx:id="buttonInserirAtendimento" layoutX="83.0" layoutY="306.0" mnemonicParsing="false" onAction="#handlerInserirAtendimento" text="Inserir" />
       <Button fx:id="buttonAtualizarAtendimento" layoutX="243.0" layoutY="306.0" mnemonicParsing="false" onAction="#handlerAtualizarAtendimento" text="Atualizar" />
       <Button fx:id="buttonExcluirAtendimento" layoutX="420.0" layoutY="306.0" mnemonicParsing="false" onAction="#handlerExcluirAtendimento" text="Excluir" />
-      <Button fx:id="buttonNovoAtendimento" layoutX="24.0" layoutY="38.0" mnemonicParsing="false" onAction="#handlerNovoAtendimento" text="Novo" />
+      <Button fx:id="buttonNovoAtendimento" layoutX="85.0" layoutY="38.0" mnemonicParsing="false" onAction="#handlerNovoAtendimento" text="Novo" />
+      <AnchorPane fx:id="setaVoltarCadastroAtendimento" layoutX="27.0" layoutY="16.0" onMouseClicked="#handlerVoltarCadastroAtendimento" prefHeight="32.0" prefWidth="31.0" />
+      <Line endX="28.0" endY="-1.0" layoutX="12.0" layoutY="44.0" startX="17.5" startY="-12.5" />
+      <Line endX="-12.5" endY="6.5" layoutX="42.0" layoutY="25.0" startX="-1.0" startY="-5.0" />
+      <Line endX="18.0" layoutX="38.0" layoutY="31.0" startX="-8.0" />
    </children>
 </AnchorPane>

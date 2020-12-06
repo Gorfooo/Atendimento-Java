@@ -15,7 +15,7 @@ public class EmpresaDao {
         this.connection = connection;
     }
         public boolean inserir(Empresa empresa){
-        String sql = "insert into tb_empresa (serial,cnpj,razao_social,fone,endereco,inscricao_estadual,id_tipo_sistema)values(?,?,?,?,?,?,?)";
+        String sql = "insert into tb_empresa (serial,cnpj,razao_social,fone,endereco,inscricao_estadual,tipo_sistema)values(?,?,?,?,?,?,?)";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setString(1,empresa.getSerial());
@@ -24,7 +24,7 @@ public class EmpresaDao {
             stmt.setString(4,empresa.getFone()); 
             stmt.setString(5,empresa.getEndereco()); 
             stmt.setString(6,empresa.getInscricao_estadual()); 
-            stmt.setInt(7,empresa.getId_tipo_sistema());
+            stmt.setString(7,empresa.getTipo_sistema());
             stmt.execute();
             System.out.println("Empresa inserida com sucesso!\n");
             return true;
@@ -41,7 +41,7 @@ public class EmpresaDao {
             PreparedStatement stmt = connection.prepareStatement(sql);
             ResultSet resultado = stmt.executeQuery(sql);
             while(resultado.next()){
-                Empresa empresa = new Empresa(sql, sql, sql, sql, sql, sql, Integer.MIN_VALUE);
+                Empresa empresa = new Empresa(Integer.SIZE, sql, sql, sql, sql, sql, sql, sql);
                 empresa.setId(resultado.getInt("id_empresa"));
                 empresa.setSerial(resultado.getString("serial"));
                 empresa.setCnpj(resultado.getString("cnpj"));
@@ -49,7 +49,7 @@ public class EmpresaDao {
                 empresa.setFone(resultado.getString("fone"));
                 empresa.setEndereco(resultado.getString("endereco"));
                 empresa.setInscricao_estadual(resultado.getString("inscricao_estadual"));
-                empresa.setId_tipo_sistema(resultado.getInt("id_tipo_sistema"));
+                empresa.setTipo_sistema(resultado.getString("tipo_sistema"));
                 listaEmpresa.add(empresa);
                 System.out.println("Empresas listadas com sucesso!\n");
             }
@@ -74,7 +74,7 @@ public class EmpresaDao {
     }
     
     public boolean atualizar(Empresa empresa){
-        String sql = "update tb_empresa set id_empresa=?, serial=?, cnpj=?, razao_social=?, fone=?, endereco=?, inscricao_estadual=?, id_tipo_sistema=? where id_empresa=?";
+        String sql = "update tb_empresa set id_empresa=?, serial=?, cnpj=?, razao_social=?, fone=?, endereco=?, inscricao_estadual=?, tipo_sistema=? where id_empresa=?";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setInt(1, empresa.getId());
@@ -84,7 +84,7 @@ public class EmpresaDao {
             stmt.setString(5, empresa.getFone());
             stmt.setString(6, empresa.getEndereco());
             stmt.setString(7, empresa.getInscricao_estadual());
-            stmt.setInt(8, empresa.getId_tipo_sistema());
+            stmt.setString(8, empresa.getTipo_sistema());
             stmt.execute();
             System.out.println("Empresa atualizada com sucesso!\n");
             return true;
@@ -96,7 +96,7 @@ public class EmpresaDao {
     
     public Empresa buscar(Empresa empresa){
         String sql = "select * from tb_empresa where id_empresa=?";
-        Empresa retorno = new Empresa(sql, sql, sql, sql, sql, sql, Integer.MIN_VALUE);
+        Empresa retorno = new Empresa(Integer.SIZE, sql, sql, sql, sql, sql, sql, sql);
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setInt(1, empresa.getId());
@@ -108,7 +108,7 @@ public class EmpresaDao {
                 empresa.setFone(resultado.getString("fone"));
                 empresa.setEndereco(resultado.getString("endereco"));
                 empresa.setInscricao_estadual(resultado.getString("inscricao_estadual"));
-                empresa.setId_tipo_sistema(resultado.getInt("id_tipo_sistema"));
+                empresa.setTipo_sistema(resultado.getString("tipo_sistema"));
                 retorno = empresa;
                 System.out.println("Empresa localizada com sucesso!\n");
         }catch (SQLException e){

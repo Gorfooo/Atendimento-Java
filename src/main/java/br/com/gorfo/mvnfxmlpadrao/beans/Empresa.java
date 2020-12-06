@@ -8,16 +8,17 @@ public class Empresa {
     private String fone;
     private String endereco;
     private String inscricao_estadual;
-    private Integer id_tipo_sistema;
+    private String tipo_sistema;
 
-    public Empresa(String serial, String cnpj, String razao_social, String fone, String endereco, String inscricao_estadual, Integer id_tipo_sistema) {
+    public Empresa(Integer id, String serial, String cnpj, String razao_social, String fone, String endereco, String inscricao_estadual, String tipo_sistema) {
+        this.id = id;
         this.serial = serial;
         this.cnpj = cnpj;
         this.razao_social = razao_social;
         this.fone = fone;
         this.endereco = endereco;
         this.inscricao_estadual = inscricao_estadual;
-        this.id_tipo_sistema = id_tipo_sistema;
+        this.tipo_sistema = tipo_sistema;
     }
 
     public Integer getId() {
@@ -76,12 +77,11 @@ public class Empresa {
         this.inscricao_estadual = inscricao_estadual;
     }
 
-    public Integer getId_tipo_sistema() {
-        return id_tipo_sistema;
+    public String getTipo_sistema() {
+        return tipo_sistema;
     }
 
-    public void setId_tipo_sistema(Integer id_tipo_sistema) {
-        this.id_tipo_sistema = id_tipo_sistema;
+    public void setTipo_sistema(String tipo_sistema) {
+        this.tipo_sistema = tipo_sistema;
     }
-    
 }

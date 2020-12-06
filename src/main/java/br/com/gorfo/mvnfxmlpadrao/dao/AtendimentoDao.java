@@ -18,15 +18,15 @@ public class AtendimentoDao {
     }
     
     public boolean inserir(Atendimento atendimento){
-        String sql = "Insert into tb_atendimento (abandonada,data,id_atendente_transferido,observacao,id_cliente,id_atendente) values (?,?,?,?,?,?)";
+        String sql = "Insert into tb_atendimento (abandonada,data,atendente_transferido,observacao,cliente,atendente) values (?,?,?,?,?,?)";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setString(1,atendimento.getAbandonada());
             stmt.setDate(2,Date.valueOf(atendimento.getData()));
-            stmt.setInt(3,atendimento.getId_atendente_transferido());        
+            stmt.setString(3,atendimento.getAtendente_transferido());        
             stmt.setString(4,atendimento.getObservacao()); 
-            stmt.setInt(5,atendimento.getId_cliente()); 
-            stmt.setInt(6,atendimento.getId_atendente());  
+            stmt.setString(5,atendimento.getCliente()); 
+            stmt.setString(6,atendimento.getAtendente());  
             stmt.execute();
             System.out.println("Atendimento inserido com sucesso!\n");
             return true;
@@ -42,14 +42,14 @@ public class AtendimentoDao {
             PreparedStatement stmt = connection.prepareStatement(sql);
             ResultSet resultado = stmt.executeQuery(sql);
             while(resultado.next()){
-                Atendimento atendimento = new Atendimento(sql, LocalDate.MAX, Integer.MIN_VALUE, sql, Integer.MIN_VALUE, Integer.MIN_VALUE);
+                Atendimento atendimento = new Atendimento(Integer.SIZE, sql, LocalDate.MAX, sql, sql, sql, sql);
                 atendimento.setId(resultado.getInt("id_atendimento"));
                 atendimento.setAbandonada(resultado.getString("abandonada"));
                 atendimento.setData(resultado.getDate("Data").toLocalDate());
-                atendimento.setId_atendente_transferido(resultado.getInt("id_atendente_transferido"));
+                atendimento.setAtendente_transferido(resultado.getString("atendente_transferido"));
                 atendimento.setObservacao(resultado.getString("observacao"));
-                atendimento.setId_cliente(resultado.getInt("id_cliente"));
-                atendimento.setId_atendente(resultado.getInt("id_atendente"));
+                atendimento.setCliente(resultado.getString("cliente"));
+                atendimento.setAtendente(resultado.getString("atendente"));
                 listaAtendimento.add(atendimento);
                 System.out.println("Atendimento localizado com sucesso!\n");
             }
@@ -73,16 +73,16 @@ public class AtendimentoDao {
         }
     }
         public boolean atualizar(Atendimento atendimento){
-        String sql = "update tb_atendimento set id_atendimento=?, abandonada=?, Data=?, id_atendente_transferido=?, observacao=?, id_cliente=?, id_atendente=? where id_atendimento=?";
+        String sql = "update tb_atendimento set id_atendimento=?, abandonada=?, Data=?, atendente_transferido=?, observacao=?, cliente=?, atendente=? where id_atendimento=?";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setInt(1, atendimento.getId());
             stmt.setString(2, atendimento.getAbandonada());
             stmt.setDate(3, Date.valueOf(atendimento.getData()));
-            stmt.setInt(4, atendimento.getId_atendente_transferido());
+            stmt.setString(4, atendimento.getAtendente_transferido());
             stmt.setString(5, atendimento.getObservacao());
-            stmt.setInt(6, atendimento.getId_cliente());
-            stmt.setInt(7, atendimento.getId_atendente());
+            stmt.setString(6, atendimento.getCliente());
+            stmt.setString(7, atendimento.getAtendente());
             stmt.execute();
             System.out.println("Atendimento atualizado com sucesso!\n");
             return true;
@@ -94,7 +94,7 @@ public class AtendimentoDao {
     
     public Atendimento buscar(Atendimento atendimento){
         String sql = "select * from tb_atendimento where id_atendimento=?";
-        Atendimento retorno = new Atendimento(sql, LocalDate.MAX, Integer.MIN_VALUE, sql, Integer.MIN_VALUE, Integer.MIN_VALUE);
+        Atendimento retorno = new Atendimento(Integer.SIZE, sql, LocalDate.MAX, sql, sql, sql, sql);
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setInt(1, atendimento.getId());
@@ -102,10 +102,10 @@ public class AtendimentoDao {
             if (resultado.next());
                 atendimento.setAbandonada(resultado.getString("abandonada"));
                 atendimento.setData(resultado.getDate("Data").toLocalDate());
-                atendimento.setId_atendente_transferido(resultado.getInt("id_atendente_transferido"));
+                atendimento.setAtendente_transferido(resultado.getString("atendente_transferido"));
                 atendimento.setObservacao(resultado.getString("observacao"));
-                atendimento.setId_cliente(resultado.getInt("id_cliente"));
-                atendimento.setId_atendente(resultado.getInt("id_atendente"));
+                atendimento.setCliente(resultado.getString("cliente"));
+                atendimento.setAtendente(resultado.getString("atendente"));
                 retorno = atendimento;
                 System.out.println("Atendimento localizado com sucesso!\n");
         }catch(SQLException e){

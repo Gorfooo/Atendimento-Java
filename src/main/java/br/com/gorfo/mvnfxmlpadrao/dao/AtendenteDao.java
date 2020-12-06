@@ -19,7 +19,7 @@ public class AtendenteDao {
     }  
     
     public boolean inserir(Atendente Atendente){
-        String sql = "insert into tb_atendente (nome,cpf,rg,endereco,fone,email,data_nascimento,observacao,ramal,pis,pasep,id_setor)values(?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "insert into tb_atendente (nome,cpf,rg,endereco,fone,email,data_nascimento,observacao,ramal,pis,pasep,setor)values(?,?,?,?,?,?,?,?,?,?,?,?)";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setString(1,Atendente.getNome());
@@ -33,7 +33,7 @@ public class AtendenteDao {
             stmt.setInt(9,Atendente.getRamal()); 
             stmt.setString(10,Atendente.getPis()); 
             stmt.setString(11,Atendente.getPasep()); 
-            stmt.setInt(12,Atendente.getId_setor()); 
+            stmt.setString(12,Atendente.getSetor()); 
             stmt.execute();
             System.out.println("Atendente inserido com sucesso!\n");
             return true;
@@ -50,14 +50,14 @@ public class AtendenteDao {
             PreparedStatement stmt = connection.prepareStatement(sql);
             ResultSet resultado = stmt.executeQuery(sql);
             while(resultado.next()){
-                Atendente atendente = new Atendente(Integer.SIZE, sql, sql, Integer.MIN_VALUE, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
+                Atendente atendente = new Atendente(Integer.SIZE, sql, sql, sql, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
                 atendente.setId(resultado.getInt("id_atendente"));
                 atendente.setCpf(resultado.getString("cpf_atendente"));
                 atendente.setDataNascimento((LocalDate) resultado.getObject("DataNascimento"));
                 atendente.setEmail(resultado.getString("email"));
                 atendente.setEndereco(resultado.getString("endereco"));
                 atendente.setFone(resultado.getString("fone"));
-                atendente.setId_setor(resultado.getInt("id_setor"));
+                atendente.setSetor(resultado.getString("Setor"));
                 atendente.setNome(resultado.getString("nome"));
                 atendente.setRamal(resultado.getInt("ramal"));
                 atendente.setRg(resultado.getString("rg"));
@@ -88,7 +88,7 @@ public class AtendenteDao {
     }
     
     public boolean atualizar(Atendente atendente){
-        String sql = "update tb_atendente set id_atendente=?, nome=?, cpf=?, rg=?, endereco=?, fone=?, email=?, data_nascimento=?, observacao=?, ramal=?, pis=?, pasep=?, id_setor=? where id_atendente=?";
+        String sql = "update tb_atendente set id_atendente=?, nome=?, cpf=?, rg=?, endereco=?, fone=?, email=?, data_nascimento=?, observacao=?, ramal=?, pis=?, pasep=?, setor=? where id_atendente=?";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setInt(1, atendente.getId());
@@ -103,7 +103,7 @@ public class AtendenteDao {
             stmt.setInt(10, atendente.getRamal());
             stmt.setString(11, atendente.getPis());
             stmt.setString(12, atendente.getPasep());
-            stmt.setInt(13, atendente.getId_setor());
+            stmt.setString(13, atendente.getSetor());
             stmt.execute();
             System.out.println("Atendente atualizado com sucesso!\n");
             return true;
@@ -115,7 +115,7 @@ public class AtendenteDao {
     
     public Atendente buscar(Atendente atendente){
         String sql = "select * from tb_atendente where id_atendente=?";
-        Atendente retorno = new Atendente(Integer.SIZE, sql, sql, Integer.MIN_VALUE, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
+        Atendente retorno = new Atendente(Integer.SIZE, sql, sql, sql, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setInt(1, atendente.getId());
@@ -126,7 +126,7 @@ public class AtendenteDao {
                 atendente.setEmail(resultado.getString("email"));
                 atendente.setEndereco(resultado.getString("endereco"));
                 atendente.setFone(resultado.getString("fone"));
-                atendente.setId_setor(resultado.getInt("id_setor"));
+                atendente.setSetor(resultado.getString("setor"));
                 atendente.setNome(resultado.getString("nome"));
                 atendente.setObservacao(resultado.getString("observacao"));
                 atendente.setPasep(resultado.getString("pasep"));

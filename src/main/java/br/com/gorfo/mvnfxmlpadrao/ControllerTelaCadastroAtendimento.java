@@ -1,6 +1,7 @@
 package br.com.gorfo.mvnfxmlpadrao;
 
 import br.com.gorfo.mvnfxmlpadrao.beans.Atendimento;
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.Date;
@@ -8,12 +9,15 @@ import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 public class ControllerTelaCadastroAtendimento implements Initializable{
     
@@ -77,6 +81,12 @@ public class ControllerTelaCadastroAtendimento implements Initializable{
     @FXML
     private Button buttonNovoAtendimento;
     
+    @FXML
+    private AnchorPane setaVoltarCadastroAtendente;
+    
+    @FXML
+    private AnchorPane anchorPaneFundoAtendimento;
+    
     private ObservableList<Atendimento> olAtendimento;
     
     private Integer idAtendimentoSelecionado;
@@ -105,10 +115,11 @@ public class ControllerTelaCadastroAtendimento implements Initializable{
     private void handlerInserirAtendimento(ActionEvent event){
         String abandonada = textFieldAbandonada.getText();
         LocalDate data = datePickerData.getValue();
-        Integer textFieldAtendenteTransferido = Integer.parseInt(textFieldAtendenteTransferido.getText());
+        String atendente_transferido = textFieldAtendenteTransferido.getText();
         String observacao = textFieldObservacao.getText();
-        Integer id_cliente = Integer.parseInt(textFieldCliente.getText());
-        Integer id_atendente = Integer.parseInt(textFieldAtendente.getText());
+        String cliente = textFieldCliente.getText();
+        String atendente = textFieldAtendente.getText();
+        Atendimento atendimento = new Atendimento(idAtendimentoSelecionado, abandonada, data, atendente_transferido, observacao, cliente, atendente);
     }
     
     @FXML
@@ -119,6 +130,16 @@ public class ControllerTelaCadastroAtendimento implements Initializable{
     @FXML
     private void handlerExcluirAtendimento(ActionEvent event){
         
+    }
+    
+    @FXML
+    private void handlerVoltarCadastroAtendimento(MouseEvent event){
+        try{
+        AnchorPane a = FXMLLoader.load(getClass().getResource("TelaPrincipal.fxml"));
+        anchorPaneFundoAtendimento.getChildren().setAll(a);
+        }catch(IOException e){
+            System.out.println("Erro ao voltar para tela principal: "+ e +"\n");
+        }
     }
     
     @FXML

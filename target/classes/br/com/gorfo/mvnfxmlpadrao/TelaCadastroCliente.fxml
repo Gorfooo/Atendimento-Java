@@ -7,9 +7,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gorfo.mvnfxmlpadrao.ControllerTelaCadastroCliente">
+<AnchorPane fx:id="anchorPaneFundoCliente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gorfo.mvnfxmlpadrao.ControllerTelaCadastroCliente">
    <children>
       <Label layoutX="357.0" layoutY="26.0" text="Cadastro de Clientes">
          <font>
@@ -66,34 +67,38 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="67.0" layoutY="83.0" prefHeight="25.0" prefWidth="31.0" />
-      <TableView layoutY="360.0" prefHeight="200.0" prefWidth="923.0">
+      <TextField fx:id="textFieldId" layoutX="67.0" layoutY="83.0" prefHeight="25.0" prefWidth="31.0" />
+      <TableView fx:id="tableViewCliente" layoutY="360.0" prefHeight="200.0" prefWidth="923.0">
         <columns>
-          <TableColumn prefWidth="32.0" text="Id" />
-          <TableColumn prefWidth="128.0" text="Nome" />
-            <TableColumn prefWidth="64.0" text="Cpf" />
-            <TableColumn prefWidth="61.0" text="Rg" />
-            <TableColumn prefWidth="165.0" text="Endereço" />
-            <TableColumn prefWidth="70.0" text="Fone" />
-            <TableColumn prefWidth="137.0" text="E-mail" />
-            <TableColumn prefWidth="84.0" text="Nascimento" />
-            <TableColumn prefWidth="120.0" text="Observação" />
-            <TableColumn prefWidth="61.0" text="Revenda" />
+          <TableColumn fx:id="tableColumnId" prefWidth="32.0" text="Id" />
+          <TableColumn fx:id="tableColumnNome" prefWidth="128.0" text="Nome" />
+            <TableColumn fx:id="tableColumnCpf" prefWidth="64.0" text="Cpf" />
+            <TableColumn fx:id="tableColumnRg" prefWidth="61.0" text="Rg" />
+            <TableColumn fx:id="tableColumnEndereco" prefWidth="165.0" text="Endereço" />
+            <TableColumn fx:id="tableColumnFone" prefWidth="70.0" text="Fone" />
+            <TableColumn fx:id="tableColumnEmail" prefWidth="137.0" text="E-mail" />
+            <TableColumn fx:id="tableColumnNascimento" prefWidth="84.0" text="Nascimento" />
+            <TableColumn fx:id="tableColumnObservacao" prefWidth="120.0" text="Observação" />
+            <TableColumn fx:id="tableColumnRevenda" prefWidth="61.0" text="Revenda" />
         </columns>
       </TableView>
-      <DatePicker layoutX="677.0" layoutY="106.0" />
-      <TextField layoutX="677.0" layoutY="154.0" />
-      <TextField layoutX="677.0" layoutY="194.0" />
-      <TextField layoutX="615.0" layoutY="249.0" prefHeight="103.0" prefWidth="300.0" />
-      <TextField layoutX="67.0" layoutY="134.0" />
-      <TextField layoutX="67.0" layoutY="174.0" />
-      <TextField layoutX="67.0" layoutY="217.0" />
-      <TextField layoutX="67.0" layoutY="259.0" />
-      <TextField layoutX="67.0" layoutY="303.0" />
+      <DatePicker fx:id="datePickerDataDeNascimento" layoutX="677.0" layoutY="106.0" />
+      <TextField fx:id="textFieldEndereco" layoutX="677.0" layoutY="154.0" />
+      <TextField fx:id="textFieldRevenda" layoutX="677.0" layoutY="194.0" />
+      <TextField fx:id="textFieldObservacao" layoutX="615.0" layoutY="249.0" prefHeight="103.0" prefWidth="300.0" />
+      <TextField fx:id="textFieldNome" layoutX="67.0" layoutY="134.0" />
+      <TextField fx:id="textFieldCpf" layoutX="67.0" layoutY="174.0" />
+      <TextField fx:id="textFieldRg" layoutX="67.0" layoutY="217.0" />
+      <TextField fx:id="textFieldFone" layoutX="67.0" layoutY="259.0" />
+      <TextField fx:id="textFieldEmail" layoutX="67.0" layoutY="303.0" />
       <Button fx:id="buttonInserirCliente" layoutX="274.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerInserirCliente" text="Inserir" />
       <Button fx:id="buttonAtualizarCliente" layoutX="376.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerAtualizarCliente" text="Atualizar" />
       <Button fx:id="buttonConsultarCliente" layoutX="116.0" layoutY="83.0" mnemonicParsing="false" onAction="#handlerConsultarCliente" text="Consultar" />
       <Button fx:id="buttonExcluirCliente" layoutX="497.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerExcluirCliente" text="Excluir" />
-      <Button fx:id="buttonNovoCliente" layoutX="19.0" layoutY="31.0" mnemonicParsing="false" onAction="#handlerNovoCliente" text="Novo" />
+      <Button fx:id="buttonNovoCliente" layoutX="83.0" layoutY="31.0" mnemonicParsing="false" onAction="#handlerNovoCliente" text="Novo" />
+      <AnchorPane fx:id="setaVoltarCadastroCliente" layoutX="27.0" layoutY="16.0" onMouseClicked="#handlerVoltarCadastroCliente" prefHeight="32.0" prefWidth="31.0" />
+      <Line endX="-12.5" endY="6.5" layoutX="42.0" layoutY="25.0" startX="-1.0" startY="-5.0" />
+      <Line endX="28.0" endY="-1.0" layoutX="12.0" layoutY="44.0" startX="17.5" startY="-12.5" />
+      <Line endX="18.0" layoutX="38.0" layoutY="31.0" startX="-8.0" />
    </children>
 </AnchorPane>

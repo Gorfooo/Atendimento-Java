@@ -6,9 +6,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gorfo.mvnfxmlpadrao.ControllerTelaCadastroEmpresa">
+<AnchorPane fx:id="anchorPaneFundoEmpresa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gorfo.mvnfxmlpadrao.ControllerTelaCadastroEmpresa">
    <children>
       <Label layoutX="90.0" layoutY="178.0" text="Cnpj">
          <font>
@@ -55,30 +56,34 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TableView layoutY="360.0" prefHeight="200.0" prefWidth="923.0">
+      <TableView fx:id="tableViewEmpresa" layoutY="360.0" prefHeight="200.0" prefWidth="923.0">
         <columns>
-          <TableColumn prefWidth="52.0" text="Id" />
-          <TableColumn prefWidth="86.0" text="Serial" />
-            <TableColumn prefWidth="96.0" text="Cnpj" />
-            <TableColumn prefWidth="163.0" text="Razão Social" />
-            <TableColumn prefWidth="95.0" text="Fone" />
-            <TableColumn prefWidth="156.0" text="Endereço" />
-            <TableColumn prefWidth="134.0" text="Inscrição Estadual" />
-            <TableColumn prefWidth="140.0" text="Tipo de Sistema" />
+          <TableColumn fx:id="tableColumnId" prefWidth="52.0" text="Id" />
+          <TableColumn fx:id="tableColumnSerial" prefWidth="86.0" text="Serial" />
+            <TableColumn fx:id="tableColumnCnpj" prefWidth="96.0" text="Cnpj" />
+            <TableColumn fx:id="tableColumnRazaoSocial" prefWidth="163.0" text="Razão Social" />
+            <TableColumn fx:id="tableColumnFone" prefWidth="95.0" text="Fone" />
+            <TableColumn fx:id="tableColumnEndereco" prefWidth="156.0" text="Endereço" />
+            <TableColumn fx:id="tableColumnInscricaoEstadual" prefWidth="134.0" text="Inscrição Estadual" />
+            <TableColumn fx:id="tableColumnTipoDeSistema" prefWidth="140.0" text="Tipo de Sistema" />
         </columns>
       </TableView>
-      <TextField layoutX="429.0" layoutY="279.0" />
-      <TextField layoutX="127.0" layoutY="143.0" />
-      <TextField layoutX="127.0" layoutY="176.0" />
-      <TextField layoutX="127.0" layoutY="210.0" />
-      <TextField layoutX="89.0" layoutY="261.0" prefHeight="61.0" prefWidth="225.0" />
-      <TextField layoutX="75.0" layoutY="77.0" prefHeight="25.0" prefWidth="29.0" />
-      <TextField layoutX="699.0" layoutY="143.0" />
-      <TextField layoutX="699.0" layoutY="199.0" />
+      <TextField fx:id="textFieldFone" layoutX="429.0" layoutY="279.0" />
+      <TextField fx:id="textFieldInscricaoEstadual" layoutX="127.0" layoutY="143.0" />
+      <TextField fx:id="textFieldCnpj" layoutX="127.0" layoutY="176.0" />
+      <TextField fx:id="textFieldRazaoSocial" layoutX="127.0" layoutY="210.0" />
+      <TextField fx:id="textFieldEndereco" layoutX="89.0" layoutY="261.0" prefHeight="61.0" prefWidth="225.0" />
+      <TextField fx:id="textFieldId" layoutX="75.0" layoutY="77.0" prefHeight="25.0" prefWidth="29.0" />
+      <TextField fx:id="textFieldSerial" layoutX="699.0" layoutY="143.0" />
+      <TextField fx:id="textFieldTipoDeSistema" layoutX="699.0" layoutY="199.0" />
       <Button fx:id="buttonConsultarEmpresa" layoutX="124.0" layoutY="77.0" mnemonicParsing="false" onAction="#handlerConsultarEmpresa" text="Consultar" />
       <Button fx:id="buttonExcluirEmpresa" layoutX="836.0" layoutY="322.0" mnemonicParsing="false" onAction="#handlerExcluirEmpresa" text="Excluir" />
       <Button fx:id="buttonAtualizarEmpresa" layoutX="711.0" layoutY="322.0" mnemonicParsing="false" onAction="#handlerAtualizarEmpresa" text="Atualizar" />
       <Button fx:id="buttonInserirEmpresa" layoutX="605.0" layoutY="322.0" mnemonicParsing="false" onAction="#handlerInserirEmpresa" text="Inserir" />
-      <Button fx:id="buttonNovaEmpresa" layoutX="24.0" layoutY="33.0" mnemonicParsing="false" onAction="#handlerNovaEmpresa" text="Novo" />
+      <Button fx:id="buttonNovaEmpresa" layoutX="82.0" layoutY="33.0" mnemonicParsing="false" onAction="#handlerNovaEmpresa" text="Novo" />
+      <AnchorPane fx:id="setaVoltarCadastroEmpresa" layoutX="27.0" layoutY="16.0" onMouseClicked="#handlerVoltarCadastroEmpresa" prefHeight="32.0" prefWidth="31.0" />
+      <Line endX="-12.5" endY="6.5" layoutX="42.0" layoutY="25.0" startX="-1.0" startY="-5.0" />
+      <Line endX="28.0" endY="-1.0" layoutX="12.0" layoutY="44.0" startX="17.5" startY="-12.5" />
+      <Line endX="18.0" layoutX="38.0" layoutY="31.0" startX="-8.0" />
    </children>
 </AnchorPane>

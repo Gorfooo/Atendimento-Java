@@ -1,6 +1,7 @@
 package br.com.gorfo.mvnfxmlpadrao;
 
 import br.com.gorfo.mvnfxmlpadrao.beans.Atendente;
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.Date;
@@ -8,14 +9,17 @@ import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
-public class ControllerTelaCadastroAtendente implements Initializable{
+public class ControllerTelaCadastroAtendente{// implements Initializable{
     
     @FXML
     private TextField textFieldId;
@@ -113,15 +117,21 @@ public class ControllerTelaCadastroAtendente implements Initializable{
     @FXML
     private Button buttonNovoAtendente;
     
+    @FXML
+    private AnchorPane setaVoltarCadastroAtendente;
+    
+    @FXML
+    private AnchorPane anchorPaneFundoAtendente;
+    
     private ObservableList<Atendente> olAtendente;
     
     private Integer idAtendenteSelecionado;
     
-    @Override
-    public void initialize(URL location, ResourceBundle resources){
-        tableViewAtendente.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> selecionarAtendente(newValue));
-    }
+//    @Override
+//    public void initialize(URL location, ResourceBundle resources){
+//        tableViewAtendente.getSelectionModel().selectedItemProperty().addListener(
+//                (observable, oldValue, newValue) -> selecionarAtendente(newValue));
+//    }
     
     public void popularAtendente(){
         
@@ -157,11 +167,21 @@ public class ControllerTelaCadastroAtendente implements Initializable{
         String endereco = textFieldEndereco.getText();
         String fone = textFieldFone.getText();
         String observacao = textFieldObservacao.getText();
-        Integer setor = Integer.parseInt(textFieldObservacao.getText());
+        String setor = textFieldObservacao.getText();
         Integer ramal = Integer.parseInt(textFieldRamal.getText());
         LocalDate dataNascimento = datePickerDataDeNascimento.getValue();
-        Atendente atendente = new Atendente(ramal,pis,pasep,setor,nome,cpf,rg,endereco,fone,email,dataNascimento,observacao);
+        Atendente atendente = new Atendente(ramal, pis, pasep, fone, nome, cpf, rg, endereco, fone, email, dataNascimento, observacao);
         
+    }
+    
+    @FXML
+    private void handlerVoltarCadastroAtendente(MouseEvent event){
+        try{
+        AnchorPane a = FXMLLoader.load(getClass().getResource("TelaPrincipal.fxml"));
+        anchorPaneFundoAtendente.getChildren().setAll(a);
+        }catch(IOException e){
+            System.out.println("Erro ao voltar para tela principal: "+ e +"\n");
+        }
     }
     
     @FXML
