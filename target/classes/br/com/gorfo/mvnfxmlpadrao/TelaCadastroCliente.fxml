@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.gorfo.mvnfxmlpadrao.ControllerTelaCadastroCliente">
+   <children>
+      <Label layoutX="357.0" layoutY="26.0" text="Cadastro de Clientes">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="85.0" text="Id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="137.0" text="Nome">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="602.0" layoutY="156.0" text="Endereço">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="604.0" layoutY="196.0" text="Revenda">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="530.0" layoutY="251.0" text="Observação">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="261.0" text="Fone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="177.0" text="Cpf">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="219.0" text="Rg">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="305.0" text="E-mail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="107.0" text="Data de Nascimento">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="67.0" layoutY="83.0" prefHeight="25.0" prefWidth="31.0" />
+      <TableView layoutY="360.0" prefHeight="200.0" prefWidth="923.0">
+        <columns>
+          <TableColumn prefWidth="32.0" text="Id" />
+          <TableColumn prefWidth="128.0" text="Nome" />
+            <TableColumn prefWidth="64.0" text="Cpf" />
+            <TableColumn prefWidth="61.0" text="Rg" />
+            <TableColumn prefWidth="165.0" text="Endereço" />
+            <TableColumn prefWidth="70.0" text="Fone" />
+            <TableColumn prefWidth="137.0" text="E-mail" />
+            <TableColumn prefWidth="84.0" text="Nascimento" />
+            <TableColumn prefWidth="120.0" text="Observação" />
+            <TableColumn prefWidth="61.0" text="Revenda" />
+        </columns>
+      </TableView>
+      <DatePicker layoutX="677.0" layoutY="106.0" />
+      <TextField layoutX="677.0" layoutY="154.0" />
+      <TextField layoutX="677.0" layoutY="194.0" />
+      <TextField layoutX="615.0" layoutY="249.0" prefHeight="103.0" prefWidth="300.0" />
+      <TextField layoutX="67.0" layoutY="134.0" />
+      <TextField layoutX="67.0" layoutY="174.0" />
+      <TextField layoutX="67.0" layoutY="217.0" />
+      <TextField layoutX="67.0" layoutY="259.0" />
+      <TextField layoutX="67.0" layoutY="303.0" />
+      <Button fx:id="buttonInserirCliente" layoutX="274.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerInserirCliente" text="Inserir" />
+      <Button fx:id="buttonAtualizarCliente" layoutX="376.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerAtualizarCliente" text="Atualizar" />
+      <Button fx:id="buttonConsultarCliente" layoutX="116.0" layoutY="83.0" mnemonicParsing="false" onAction="#handlerConsultarCliente" text="Consultar" />
+      <Button fx:id="buttonExcluirCliente" layoutX="497.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerExcluirCliente" text="Excluir" />
+   </children>
+</AnchorPane>
