@@ -2,6 +2,7 @@ package br.com.gorfo.mvnfxmlpadrao;
 
 import br.com.gorfo.mvnfxmlpadrao.beans.Atendimento;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
@@ -32,7 +33,7 @@ public class ControllerTelaCadastroAtendimento implements Initializable{
     private TextField textFieldObservacao;
     
     @FXML
-    private TextField textFiedAtendenteTransferido;
+    private TextField textFieldAtendenteTransferido;
     
     @FXML
     private DatePicker datePickerData;
@@ -102,7 +103,12 @@ public class ControllerTelaCadastroAtendimento implements Initializable{
     
     @FXML
     private void handlerInserirAtendimento(ActionEvent event){
-        
+        String abandonada = textFieldAbandonada.getText();
+        LocalDate data = datePickerData.getValue();
+        Integer textFieldAtendenteTransferido = Integer.parseInt(textFieldAtendenteTransferido.getText());
+        String observacao = textFieldObservacao.getText();
+        Integer id_cliente = Integer.parseInt(textFieldCliente.getText());
+        Integer id_atendente = Integer.parseInt(textFieldAtendente.getText());
     }
     
     @FXML
@@ -122,7 +128,7 @@ public class ControllerTelaCadastroAtendimento implements Initializable{
         textFieldAtendente.setText(null);
         textFieldCliente.setText(null);
         textFieldObservacao.setText(null);
-        textFiedAtendenteTransferido.setText(null);
+        textFieldAtendenteTransferido.setText(null);
         datePickerData.setValue(null);
     }
 }

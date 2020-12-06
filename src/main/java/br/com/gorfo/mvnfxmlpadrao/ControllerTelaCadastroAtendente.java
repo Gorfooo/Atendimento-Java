@@ -2,6 +2,7 @@ package br.com.gorfo.mvnfxmlpadrao;
 
 import br.com.gorfo.mvnfxmlpadrao.beans.Atendente;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
@@ -147,6 +148,19 @@ public class ControllerTelaCadastroAtendente implements Initializable{
     
     @FXML
     private void handlerInserirAtendente(ActionEvent event){
+        String nome = textFieldNome.getText();
+        String email = textFieldEmail.getText();
+        String cpf = textFieldCpf.getText();
+        String rg = textFieldRg.getText();
+        String pasep = textFieldPasep.getText();
+        String pis = textFieldPis.getText();
+        String endereco = textFieldEndereco.getText();
+        String fone = textFieldFone.getText();
+        String observacao = textFieldObservacao.getText();
+        Integer setor = Integer.parseInt(textFieldObservacao.getText());
+        Integer ramal = Integer.parseInt(textFieldRamal.getText());
+        LocalDate dataNascimento = datePickerDataDeNascimento.getValue();
+        Atendente atendente = new Atendente(ramal,pis,pasep,setor,nome,cpf,rg,endereco,fone,email,dataNascimento,observacao);
         
     }
     
