@@ -109,6 +109,9 @@ public class ControllerTelaCadastroAtendente implements Initializable{
     @FXML
     private Button buttonConsultarAtendente;
     
+    @FXML
+    private Button buttonNovoAtendente;
+    
     private ObservableList<Atendente> olAtendente;
     
     private Integer idAtendenteSelecionado;
@@ -145,5 +148,22 @@ public class ControllerTelaCadastroAtendente implements Initializable{
     @FXML
     private void handlerInserirAtendente(ActionEvent event){
         
+    }
+    
+    @FXML
+    private void handlerNovoAtendente(ActionEvent event){
+        textFieldId.setText(null);
+        textFieldNome.setText(null);
+        textFieldEmail.setText(null);
+        textFieldCpf.setText(null);
+        textFieldRg.setText(null);
+        textFieldPasep.setText(null);
+        textFieldPis.setText(null);
+        textFieldEndereco.setText(null);
+        textFieldFone.setText(null);
+        textFieldObservacao.setText(null);
+        textFieldSetor.setText(null);
+        textFieldRamal.setText(null);
+        datePickerDataDeNascimento.setValue(null);
     }
 }

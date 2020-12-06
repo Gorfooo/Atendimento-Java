@@ -73,6 +73,9 @@ public class ControllerTelaCadastroAtendimento implements Initializable{
     @FXML
     private Button buttonExcluirAtendimento;
     
+    @FXML
+    private Button buttonNovoAtendimento;
+    
     private ObservableList<Atendimento> olAtendimento;
     
     private Integer idAtendimentoSelecionado;
@@ -110,5 +113,16 @@ public class ControllerTelaCadastroAtendimento implements Initializable{
     @FXML
     private void handlerExcluirAtendimento(ActionEvent event){
         
+    }
+    
+    @FXML
+    private void handlerNovoAtendimento(ActionEvent event){
+        textFieldId.setText(null);
+        textFieldAbandonada.setText(null);
+        textFieldAtendente.setText(null);
+        textFieldCliente.setText(null);
+        textFieldObservacao.setText(null);
+        textFiedAtendenteTransferido.setText(null);
+        datePickerData.setValue(null);
     }
 }

@@ -79,5 +79,6 @@
       <Button fx:id="buttonExcluirEmpresa" layoutX="836.0" layoutY="322.0" mnemonicParsing="false" onAction="#handlerExcluirEmpresa" text="Excluir" />
       <Button fx:id="buttonAtualizarEmpresa" layoutX="711.0" layoutY="322.0" mnemonicParsing="false" onAction="#handlerAtualizarEmpresa" text="Atualizar" />
       <Button fx:id="buttonInserirEmpresa" layoutX="605.0" layoutY="322.0" mnemonicParsing="false" onAction="#handlerInserirEmpresa" text="Inserir" />
+      <Button fx:id="buttonNovaEmpresa" layoutX="24.0" layoutY="33.0" mnemonicParsing="false" onAction="#handlerNovaEmpresa" text="Novo" />
    </children>
 </AnchorPane>

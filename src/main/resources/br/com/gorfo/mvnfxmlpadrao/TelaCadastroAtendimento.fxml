@@ -73,5 +73,6 @@
       <Button fx:id="buttonInserirAtendimento" layoutX="83.0" layoutY="306.0" mnemonicParsing="false" onAction="#handlerInserirAtendimento" text="Inserir" />
       <Button fx:id="buttonAtualizarAtendimento" layoutX="243.0" layoutY="306.0" mnemonicParsing="false" onAction="#handlerAtualizarAtendimento" text="Atualizar" />
       <Button fx:id="buttonExcluirAtendimento" layoutX="420.0" layoutY="306.0" mnemonicParsing="false" onAction="#handlerExcluirAtendimento" text="Excluir" />
+      <Button fx:id="buttonNovoAtendimento" layoutX="24.0" layoutY="38.0" mnemonicParsing="false" onAction="#handlerNovoAtendimento" text="Novo" />
    </children>
 </AnchorPane>

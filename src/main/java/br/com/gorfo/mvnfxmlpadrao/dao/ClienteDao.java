@@ -1,9 +1,14 @@
 package br.com.gorfo.mvnfxmlpadrao.dao;
 
+import br.com.gorfo.mvnfxmlpadrao.beans.Cliente;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClienteDao {
     private Connection connection;
@@ -11,126 +16,114 @@ public class ClienteDao {
     public void setConnection(Connection connection) {
         this.connection = connection;
     }
-        public boolean inserir(Atendente Atendente){
-        String sql = "insert into tb_atendente (nome,cpf,rg,endereco,fone,email,data_nascimento,observacao,ramal,pis,pasep,id_setor)values(?,?,?,?,?,?,?,?,?,?,?,?)";
+        public boolean inserir(Cliente cliente){
+        String sql = "insert into tb_cliente (nome,cpf,rg,endereco,fone,email,data_nascimento,observacao,revenda)values(?,?,?,?,?,?,?,?,?)";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
-            stmt.setString(1,Atendente.getNome());
-            stmt.setString(2,Atendente.getCpf());        
-            stmt.setString(3,Atendente.getRg()); 
-            stmt.setString(4,Atendente.getEndereco()); 
-            stmt.setString(5,Atendente.getFone()); 
-            stmt.setString(6,Atendente.getEmail()); 
-            stmt.setDate(7,Date.valueOf(Atendente.getDataNascimento()));
-            stmt.setString(8,Atendente.getObservacao());
-            stmt.setInt(9,Atendente.getRamal()); 
-            stmt.setString(10,Atendente.getPis()); 
-            stmt.setString(11,Atendente.getPasep()); 
-            stmt.setInt(12,Atendente.getId_setor()); 
+            stmt.setString(1,cliente.getNome());
+            stmt.setString(2,cliente.getCpf());        
+            stmt.setString(3,cliente.getRg()); 
+            stmt.setString(4,cliente.getEndereco()); 
+            stmt.setString(5,cliente.getFone()); 
+            stmt.setString(6,cliente.getEmail()); 
+            stmt.setDate(7,Date.valueOf(cliente.getDataNascimento()));
+            stmt.setString(8,cliente.getObservacao());
+            stmt.setString(9,cliente.getRevenda()); 
             stmt.execute();
-            System.out.println("Atendente inserido com sucesso!\n");
+            System.out.println("Cliente inserido com sucesso!\n");
             return true;
         }catch (SQLException e){
-            System.out.println("Erro ao inserir atendente: "+ e +"\n");
+            System.out.println("Erro ao inserir cliente: "+ e +"\n");
             return false;
         }
     }
     
-    public List<Atendente> listar(){
-        String sql = "select * from tb_atendente";
-        List<Atendente> listaAtendente = new ArrayList();
+    public List<Cliente> listar(){
+        String sql = "select * from tb_cliente";
+        List<Cliente> listaCliente = new ArrayList();
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
             ResultSet resultado = stmt.executeQuery(sql);
             while(resultado.next()){
-                Atendente atendente = new Atendente(Integer.SIZE, sql, sql, Integer.MIN_VALUE, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
-                atendente.setId(resultado.getInt("id_atendente"));
-                atendente.setCpf(resultado.getString("cpf_atendente"));
-                atendente.setDataNascimento((LocalDate) resultado.getObject("DataNascimento"));//medico.setDataNascimento((resultado.getDate("dataNascimento_medico")).toLocalDate());
-                atendente.setEmail(resultado.getString("email"));
-                atendente.setEndereco(resultado.getString("endereco"));
-                atendente.setFone(resultado.getString("fone"));
-                atendente.setId_setor(resultado.getInt("id_setor"));
-                atendente.setNome(resultado.getString("nome"));
-                atendente.setRamal(resultado.getInt("ramal"));
-                atendente.setRg(resultado.getString("rg"));
-                atendente.setObservacao(resultado.getString("observacao"));
-                atendente.setPasep(resultado.getString("pasep"));
-                atendente.setPis(resultado.getString("nome"));
-                listaAtendente.add(atendente);
-                System.out.println("Atendentes listados com sucesso!\n");
+                Cliente cliente = new Cliente(sql, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
+                cliente.setId(resultado.getInt("id_atendente"));
+                cliente.setNome(resultado.getString("nome"));
+                cliente.setCpf(resultado.getString("cpf"));
+                cliente.setRg(resultado.getString("rg"));
+                cliente.setEndereco(resultado.getString("endereco"));
+                cliente.setFone(resultado.getString("fone"));
+                cliente.setEmail(resultado.getString("email"));
+                cliente.setDataNascimento(resultado.getDate("data_nascimento").toLocalDate());
+                cliente.setObservacao(resultado.getString("observacao"));
+                cliente.setRevenda(resultado.getString("revenda"));
+                listaCliente.add(cliente);
+                System.out.println("Clientes listados com sucesso!\n");
             }
         }catch(SQLException e){
-            System.out.println("Erro ao listar atendente: "+ e +"\n");
+            System.out.println("Erro ao listar cliente: "+ e +"\n");
         }
-        return listaAtendente;
+        return listaCliente;
     }
     
-    public boolean remover(Atendente Atendente){
-        String sql = "delete from tb_atendente where id_atendente = ?";
+    public boolean remover(Cliente cliente){
+        String sql = "delete from tb_cliente where id_cliente = ?";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
-            stmt.setInt(1, Atendente.getId());
+            stmt.setInt(1, cliente.getId());
             stmt.execute();
-            System.out.println("Atendente removido com sucesso!\n");
+            System.out.println("Cliente removido com sucesso!\n");
             return true;
         }catch(SQLException e){
-            System.out.println("Erro ao remover atendente: "+ e +"\n");
+            System.out.println("Erro ao remover cliente: "+ e +"\n");
             return false;
         }
     }
     
-    public boolean atualizar(Atendente atendente){
-        String sql = "update tb_atendente set id_atendente=?, nome=?, cpf=?, rg=?, endereco=?, fone=?, email=?, data_nascimento=?, observacao=?, ramal=?, pis=?, pasep=?, id_setor=? where id_atendente=?";
+    public boolean atualizar(Cliente cliente){
+        String sql = "update tb_cliente set id_cliente=?, nome=?, cpf=?, rg=?, endereco=?, fone=?, email=?, data_nascimento=?, observacao=?, revenda=? where id_cliente=?";
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
-            stmt.setInt(1, atendente.getId());
-            stmt.setString(2, atendente.getNome());
-            stmt.setString(3, atendente.getCpf());
-            stmt.setString(4, atendente.getRg());
-            stmt.setString(5, atendente.getEndereco());
-            stmt.setString(6, atendente.getFone());
-            stmt.setString(7, atendente.getEmail());
-            stmt.setDate(8, Date.valueOf(atendente.getDataNascimento()));
-            stmt.setString(9, atendente.getObservacao());
-            stmt.setInt(10, atendente.getRamal());
-            stmt.setString(11, atendente.getPis());
-            stmt.setString(12, atendente.getPasep());
-            stmt.setInt(13, atendente.getId_setor());
+            stmt.setInt(1, cliente.getId());
+            stmt.setString(2, cliente.getNome());
+            stmt.setString(3, cliente.getCpf());
+            stmt.setString(4, cliente.getRg());
+            stmt.setString(5, cliente.getEndereco());
+            stmt.setString(6, cliente.getFone());
+            stmt.setString(7, cliente.getEmail());
+            stmt.setDate(8, Date.valueOf(cliente.getDataNascimento()));
+            stmt.setString(9, cliente.getObservacao());
+            stmt.setString(10, cliente.getRevenda());
             stmt.execute();
-            System.out.println("Atendente atualizado com sucesso!\n");
+            System.out.println("Cliente atualizado com sucesso!\n");
             return true;
         }catch(SQLException e){
-            System.out.println("Erro ao atualizar atendente: "+ e +"\n");
+            System.out.println("Erro ao atualizar cliente: "+ e +"\n");
             return false;
         }
     }
     
-    public Atendente buscar(Atendente atendente){
-        String sql = "select * from tb_atendente where id_atendente=?";
-        Atendente retorno = new Atendente(Integer.SIZE, sql, sql, Integer.MIN_VALUE, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
+    public Cliente buscar(Cliente cliente){
+        String sql = "select * from tb_cliente where id_cliente=?";
+        Cliente retorno = new Cliente(sql, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
         try{
             PreparedStatement stmt = connection.prepareStatement(sql);
-            stmt.setInt(1, atendente.getId());
+            stmt.setInt(1, cliente.getId());
             ResultSet resultado = stmt.executeQuery();
             if (resultado.next());
-                atendente.setCpf(resultado.getString("cpf"));
-                atendente.setDataNascimento(resultado.getDate("DataNascimento").toLocalDate());
-                atendente.setEmail(resultado.getString("email"));
-                atendente.setEndereco(resultado.getString("endereco"));
-                atendente.setFone(resultado.getString("fone"));
-                atendente.setId_setor(resultado.getInt("id_setor"));
-                atendente.setNome(resultado.getString("nome"));
-                atendente.setObservacao(resultado.getString("observacao"));
-                atendente.setPasep(resultado.getString("pasep"));
-                atendente.setPis(resultado.getString("pis"));
-                atendente.setRamal(resultado.getInt("ramal"));
-                atendente.setRg(resultado.getString("rg"));
-                retorno = atendente;
-                System.out.println("Atendente localizado com sucesso!\n");
+                cliente.setNome(resultado.getString("nome"));
+                cliente.setCpf(resultado.getString("cpf"));
+                cliente.setRg(resultado.getString("rg"));
+                cliente.setEndereco(resultado.getString("endereco"));
+                cliente.setFone(resultado.getString("fone"));
+                cliente.setEmail(resultado.getString("email"));
+                cliente.setDataNascimento(resultado.getDate("data_nascimento").toLocalDate());
+                cliente.setObservacao(resultado.getString("observacao"));
+                cliente.setRevenda(resultado.getString("revenda"));
+                retorno = cliente;
+                System.out.println("Cliente localizado com sucesso!\n");
         }catch (SQLException e){
             System.out.println("Erro ao buscar cliente: "+ e +"\n");
         }
-        return atendente;
+        return retorno;
     }
 }

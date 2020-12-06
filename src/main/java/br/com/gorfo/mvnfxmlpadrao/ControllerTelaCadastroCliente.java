@@ -91,6 +91,9 @@ public class ControllerTelaCadastroCliente implements Initializable{
     @FXML
     private Button buttonExcluirCliente;
     
+    @FXML
+    private Button buttonNovoCliente;
+    
     private ObservableList<Cliente> olCliente;
     
     private Integer idClienteSelecionado;
@@ -128,5 +131,19 @@ public class ControllerTelaCadastroCliente implements Initializable{
     @FXML
     private void handlerExcluirCliente(ActionEvent event){
         
+    }
+    
+    @FXML
+    private void handlerNovoCliente(ActionEvent event){
+        textFieldId.setText(null);
+        textFieldNome.setText(null);
+        textFieldCpf.setText(null);
+        textFieldRg.setText(null);
+        textFieldFone.setText(null);
+        textFieldEmail.setText(null);
+        textFieldObservacao.setText(null);
+        textFieldRevenda.setText(null);
+        textFieldEndereco.setText(null);
+        datePickerDataDeNascimento.setValue(null);
     }
 }

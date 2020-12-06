@@ -94,5 +94,6 @@
       <Button fx:id="buttonAtualizarCliente" layoutX="376.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerAtualizarCliente" text="Atualizar" />
       <Button fx:id="buttonConsultarCliente" layoutX="116.0" layoutY="83.0" mnemonicParsing="false" onAction="#handlerConsultarCliente" text="Consultar" />
       <Button fx:id="buttonExcluirCliente" layoutX="497.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerExcluirCliente" text="Excluir" />
+      <Button fx:id="buttonNovoCliente" layoutX="19.0" layoutY="31.0" mnemonicParsing="false" onAction="#handlerNovoCliente" text="Novo" />
    </children>
 </AnchorPane>

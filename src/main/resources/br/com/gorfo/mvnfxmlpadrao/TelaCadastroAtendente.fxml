@@ -111,5 +111,6 @@
       <Button fx:id="buttonExcluirAtendente" layoutX="511.0" layoutY="327.0" mnemonicParsing="false" onAction="#handlerExcluirAtendente" text="Excluir" />
       <Button fx:id="buttonInserirAtendente" layoutX="340.0" layoutY="327.0" mnemonicParsing="false" onAction="#handlerInserirAtendente" text="Inserir" />
       <Button fx:id="buttonAtualizarAtendente" layoutX="417.0" layoutY="327.0" mnemonicParsing="false" onAction="#handlerAtualizarAtendente" text="Atualizar" />
+      <Button fx:id="buttonNovoAtendente" layoutX="15.0" layoutY="19.0" mnemonicParsing="false" onAction="#handlerNovoAtendente" text="Novo" />
    </children>
 </AnchorPane>

@@ -27,7 +27,7 @@ public class AtendenteDao {
             stmt.setString(3,Atendente.getRg()); 
             stmt.setString(4,Atendente.getEndereco()); 
             stmt.setString(5,Atendente.getFone()); 
-            stmt.setString(6,Atendente.getEmail()); 
+            stmt.setString(6,Atendente.getEmail());
             stmt.setDate(7,Date.valueOf(Atendente.getDataNascimento()));
             stmt.setString(8,Atendente.getObservacao());
             stmt.setInt(9,Atendente.getRamal()); 
@@ -53,7 +53,7 @@ public class AtendenteDao {
                 Atendente atendente = new Atendente(Integer.SIZE, sql, sql, Integer.MIN_VALUE, sql, sql, sql, sql, sql, sql, LocalDate.MIN, sql);
                 atendente.setId(resultado.getInt("id_atendente"));
                 atendente.setCpf(resultado.getString("cpf_atendente"));
-                atendente.setDataNascimento((LocalDate) resultado.getObject("DataNascimento"));//medico.setDataNascimento((resultado.getDate("dataNascimento_medico")).toLocalDate());
+                atendente.setDataNascimento((LocalDate) resultado.getObject("DataNascimento"));
                 atendente.setEmail(resultado.getString("email"));
                 atendente.setEndereco(resultado.getString("endereco"));
                 atendente.setFone(resultado.getString("fone"));
@@ -68,7 +68,7 @@ public class AtendenteDao {
                 System.out.println("Atendentes listados com sucesso!\n");
             }
         }catch(SQLException e){
-            System.out.println("Erro ao listar atendente: "+ e +"\n");
+            System.out.println("Erro ao listar atendentes: "+ e +"\n");
         }
         return listaAtendente;
     }
@@ -136,8 +136,8 @@ public class AtendenteDao {
                 retorno = atendente;
                 System.out.println("Atendente localizado com sucesso!\n");
         }catch (SQLException e){
-            System.out.println("Erro ao buscar cliente: "+ e +"\n");
+            System.out.println("Erro ao buscar atendente: "+ e +"\n");
         }
-        return atendente;
+        return retorno;
     }
 }

@@ -69,6 +69,9 @@ public class ControllerTelaCadastroEmpresa implements Initializable{
     private Button buttonConsultarEmpresa;
     
     @FXML
+    private Button buttonNovaEmpresa;
+    
+    @FXML
     private Button buttonInserirEmpresa;
     
     @FXML
@@ -76,9 +79,6 @@ public class ControllerTelaCadastroEmpresa implements Initializable{
     
     @FXML
     private Button buttonExcluirEmpresa;
-    
-    @FXML
-    private Button buttonCadastrarClientes;
     
     private ObservableList<Empresa> olCliente;
     
@@ -120,8 +120,15 @@ public class ControllerTelaCadastroEmpresa implements Initializable{
     }
     
     @FXML
-    private void handlerCadastrarClientes(ActionEvent event){
-        
+    private void handlerNovaEmpresa(ActionEvent event){
+        textFieldId.setText(null);
+        textFieldInscricaoEstadual.setText(null);
+        textFieldCnpj.setText(null);
+        textFieldRazaoSocial.setText(null);
+        textFieldEndereco.setText(null);
+        textFieldFone.setText(null);
+        textFieldTipoDeSistema.setText(null);
+        textFieldSerial.setText(null);
     }
     
 }
