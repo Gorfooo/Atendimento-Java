@@ -13,7 +13,8 @@ public abstract class Pessoa {
     private LocalDate dataNascimento;
     private String observacao;
 
-    public Pessoa(String nome, String cpf, String rg, String endereco, String fone, String email, LocalDate dataNascimento, String observacao) {
+    public Pessoa(Integer id, String nome, String cpf, String rg, String endereco, String fone, String email, LocalDate dataNascimento, String observacao) {
+        this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.rg = rg;

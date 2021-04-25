@@ -8,7 +8,7 @@ public class Conexao {
     
     private static Connection connection;
 
-    public static Connection getConnection() throws ClassNotFoundException {
+    public static Connection getConnection(){
         if (connection == null){
             return conectar();
         }else{
@@ -16,14 +16,14 @@ public class Conexao {
         }
     }
     
-    public static Connection conectar() throws ClassNotFoundException{
+    public static Connection conectar(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost/atendimento?useTimezone=true&serverTimezone=UTC","Gorfo","123");
-            System.out.println("Conectado com sucesso");
+            System.out.println("Conectado com sucesso!");
             return connection;
-        }catch(SQLException e){
-            System.out.println("Erro ao conectar: "+e);
+        }catch(SQLException | ClassNotFoundException e){
+            System.out.println("Erro ao conectar: "+ e + "\n");
             return null;
         }
     }
@@ -35,10 +35,5 @@ public class Conexao {
         }catch(SQLException e){
             System.out.println("Erro ao desconectar: "+e);
         }
-    }
-    
-    public static void main(String[] args) throws ClassNotFoundException {
-        Conexao.getConnection();
-        Conexao.desconectar();
     }
 }

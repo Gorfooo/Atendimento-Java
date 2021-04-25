@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
@@ -20,12 +22,11 @@
                <items>
                   <MenuItem fx:id="menuItemCadastrarAtendimento" mnemonicParsing="false" onAction="#handlerCadastrarAtendimento" text="Cadastrar Atendimento" />
                </items></Menu>
-          <Menu fx:id="MenuRelatorio" mnemonicParsing="false" text="Relatório">
-               <items>
-                  <MenuItem fx:id="menuItemRelatorioAtendentes" mnemonicParsing="false" text="Relatório de atendentes" />
-               </items>
-          </Menu>
         </menus>
       </MenuBar>
+      <Button fx:id="buttonRelatorioAtendente" layoutX="729.0" layoutY="495.0" mnemonicParsing="false" onAction="#handlerRelatorioAtendente" text="Relatório de Atendentes">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
    </children>
 </AnchorPane>

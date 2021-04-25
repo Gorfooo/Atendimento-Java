@@ -8,8 +8,8 @@ public class Atendente extends Pessoa{
     private String pasep;
     private String setor;
 
-    public Atendente(Integer ramal, String pis, String pasep, String setor, String nome, String cpf, String rg, String endereco, String fone, String email, LocalDate dataNascimento, String observacao) {
-        super(nome, cpf, rg, endereco, fone, email, dataNascimento, observacao);
+    public Atendente(Integer ramal, String pis, String pasep, String setor, Integer id, String nome, String cpf, String rg, String endereco, String fone, String email, LocalDate dataNascimento, String observacao) {
+        super(id, nome, cpf, rg, endereco, fone, email, dataNascimento, observacao);
         this.ramal = ramal;
         this.pis = pis;
         this.pasep = pasep;

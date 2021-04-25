@@ -1,0 +1,399 @@
+
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\hooks
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\info
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\logs
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\logs\refs
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\logs\refs\heads
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\logs\refs\remotes
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\logs\refs\remotes\origin
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\02
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\05
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\06
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\08
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\0a
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\0b
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\0d
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\0e
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\0f
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\12
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\13
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\14
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\1b
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\1c
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\1e
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\22
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\26
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\29
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\2b
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\30
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\32
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\35
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\36
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\37
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\38
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\39
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\3a
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\3b
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\3c
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\3d
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\3e
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\41
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\42
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\44
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\46
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\48
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\49
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\4b
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\4d
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\50
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\54
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\55
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\57
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\58
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\59
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\5a
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\5c
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\5d
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\5f
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\61
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\62
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\68
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\69
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\6a
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\6c
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\6d
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\6e
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\71
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\73
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\74
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\75
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\76
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\7b
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\7d
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\7e
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\7f
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\80
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\81
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\82
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\84
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\86
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\88
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\8a
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\8d
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\90
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\92
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\93
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\95
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\97
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\9a
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\9b
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\9d
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\9e
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\9f
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\a0
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\a2
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\a5
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\aa
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\ac
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\af
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\b0
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\b1
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\b3
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\b6
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\b7
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\b8
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\bd
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\be
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\bf
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\c0
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\c3
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\c4
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\c5
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\c6
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\c9
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\cb
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\cd
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\d0
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\d1
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\d2
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\d5
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\d7
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\d9
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\da
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\db
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\dd
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\de
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\df
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\e0
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\e2
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\e4
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\e6
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\e7
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\e8
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\e9
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\eb
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\ed
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\f7
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\f8
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\fa
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\fb
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\fd
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\fe
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\info
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\objects\pack
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\refs
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\refs\heads
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\refs\remotes
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\refs\remotes\origin
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\.git\refs\tags
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\module-info.java = 10 linhas
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\App.java = 38 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\ControllerTelaCadastroAtendente.java = 313 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\ControllerTelaCadastroAtendimento.java = 234 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\ControllerTelaCadastroCliente.java = 272 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\ControllerTelaCadastroEmpresa.java = 244 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\ControllerTelaPrincipal.java = 98 linhas
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\beans
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\beans\Atendente.java = 51 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\beans\Atendimento.java = 80 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\beans\Cliente.java = 21 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\beans\Empresa.java = 87 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\beans\Pessoa.java = 101 linhas
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\dao
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\dao\AtendenteDao.java = 140 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\dao\AtendimentoDao.java = 113 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\dao\ClienteDao.java = 126 linhas
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\dao\EmpresaDao.java = 118 linhas
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\database
+	 C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\java\br\com\gorfo\mvnfxmlpadrao\database\Conexao.java = 39 linhas
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\resources
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\resources\br
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\resources\br\com
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\resources\br\com\gorfo
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\resources\br\com\gorfo\mvnfxmlpadrao
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\main\resources\br\com\gorfo\mvnfxmlpadrao\relatorio
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\test
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\src\test\java
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes\br
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes\br\com
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes\br\com\gorfo
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes\br\com\gorfo\mvnfxmlpadrao
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes\br\com\gorfo\mvnfxmlpadrao\beans
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes\br\com\gorfo\mvnfxmlpadrao\dao
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes\br\com\gorfo\mvnfxmlpadrao\database
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\classes\br\com\gorfo\mvnfxmlpadrao\relatorio
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\generated-sources
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\generated-sources\annotations
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\maven-archiver
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\maven-status
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\maven-status\maven-compiler-plugin
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\maven-status\maven-compiler-plugin\compile
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\maven-status\maven-compiler-plugin\compile\default-compile
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\maven-status\maven-compiler-plugin\testCompile
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile
+
+Path = C:\Users\filip\Desktop\dev de soft\Programas\MvnFxmlPadrao - cópia\target\test-classes
+
+
+
+=============================================
+Sub-pastas do projeto = 187 pastas
+Classes do projeto = 17 classes
+Linhas de codigo do projeto = 2085 linhas
